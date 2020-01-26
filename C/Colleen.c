@@ -12,8 +12,20 @@
 
 # include <unistd.h>
 
+/*
+   comment outside of program
+*/
+
+void	redundant(){
+	write(1, "I am redundant\n", 15);//////
+}
+
 int main() {
-	write(1, "oh hi\n", 6);////
-	write(1, "bye then\n", 9);//////
+	/*
+	   comment in main
+	*/
+	write(1, "I am Colleen\n", 13);////
+	redundant();
+	write(1, "bye Colleen\n", 12);//////
 	return (0);
 }
