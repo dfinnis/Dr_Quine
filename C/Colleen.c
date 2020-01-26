@@ -11,6 +11,7 @@
 /* ************************************************************************** */
 
 # include <unistd.h>
+# include <stdio.h>
 
 /*
    comment outside of program
@@ -26,6 +27,7 @@ int main() {
 	*/
 	write(1, "I am Colleen\n", 13);////
 	redundant();
+	printf("this is the entire source code in this string here\n");
 	write(1, "bye Colleen\n", 12);//////
 	return (0);
 }
