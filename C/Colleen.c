@@ -10,31 +10,19 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-// # include <unistd.h>
 # include <stdio.h>
-
 /*
-   comment outside of program
+   comment
 */
-
-// void	redundant(){
-// 	write(1, "I am redundant\n", 15);//////
-// }
-
 void	print(char *c){
-	// printf(c, c);
-	printf(c, 10, 10, 10, 10, 10);
+	printf(c, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 34, c, 34, 10, 10, 10, 10);
 }
 
-int main() {
+int	main() {
 	/*
-	   comment in main
+	   comment
 	*/
-	// write(1, "I am Colleen\n", 13);////
-	// redundant();
-	// printf("this is the entire source code in this string here\n");
-	char *c="# include <stdio.h>%c/*%c   comment%c*/%cvoid	print(char *c){%c";
+	char *c="# include <stdio.h>%c/*%c   comment%c*/%cvoid	print(char *c){%c	printf(c, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 34, c, 34, 10, 10, 10, 10);%c}%c%cint	main() {%c	/*%c	   comment%c	*/%c	char *c=%c%s%c%c	print(c);%c	return (0);%c}%c";
 	print(c);
-	// write(1, "bye Colleen\n", 12);//////
 	return (0);
 }
