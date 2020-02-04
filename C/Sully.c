@@ -9,7 +9,7 @@ int main(){
 	if (!strstr(env, "./Sully_"))
 		x++;
 
-	char *s="#include <stdio.h>%5$c#include <stdlib.h>%5$c#include <string.h>%5$c%5$cint main(){%5$c%4$cint x=%3$d;%5$c%5$c%4$cchar *env=getenv(%2$c_%2$c);%5$c%4$cif (!strstr(env, %2$c./Sully_%2$c))%5$c%4$c%4$cx++;%5$c%5$c%4$cchar *s=%2$c%6$s%2$c;%5$c%4$cchar *sully;%5$c%4$cchar *fname;%5$c%4$cchar *compile;%5$c%4$cchar *execute;%5$c%4$cFILE *f;%5$c%5$c%4$casprintf(&sully,%2$cSully_%1$cd%2$c, x-1);%5$c%4$casprintf(&fname,%2$cSully_%1$cd.c%2$c, x-1);%5$c%4$casprintf(&compile, %2$cclang -Wall -Werror -Wextra Sully_%1$c1$d.c -o Sully_%1$c1$d; %2$c, x-1);%5$c%4$casprintf(&execute, %2$c./Sully_%1$cd%2$c, x-1);%5$c%5$c%4$cf=fopen(fname,%2$cw%2$c);%5$c%4$cfprintf(f,s,37,34,x-1,9,10,s);%5$c%4$cfclose(f);%5$c%4$csystem(compile);%5$c%4$cif (x > 1)%5$c%4$c%4$csystem(execute);%5$c%4$creturn (0);%5$c}";
+	char *s="#include <stdio.h>%1$c#include <stdlib.h>%1$c#include <string.h>%1$c%1$cint main(){%1$c	int x=%4$d;%1$c%1$c	char *env=getenv(%2$c_%2$c);%1$c	if (!strstr(env, %2$c./Sully_%2$c))%1$c		x++;%1$c%1$c	char *s=%2$c%5$s%2$c;%1$c	char *sully;%1$c	char *fname;%1$c	char *compile;%1$c	char *execute;%1$c	FILE *f;%1$c%1$c	asprintf(&sully,%2$cSully_%3$cd%2$c, x-1);%1$c	asprintf(&fname,%2$cSully_%3$cd.c%2$c, x-1);%1$c	asprintf(&compile, %2$cclang -Wall -Werror -Wextra Sully_%3$c1$d.c -o Sully_%3$c1$d; %2$c, x-1);%1$c	asprintf(&execute, %2$c./Sully_%3$cd%2$c, x-1);%1$c%1$c	f=fopen(fname,%2$cw%2$c);%1$c	fprintf(f,s,10,34,37,x-1,s);%1$c	fclose(f);%1$c	system(compile);%1$c	if (x > 1)%1$c		system(execute);%1$c	return (0);%1$c}";
 	char *sully;
 	char *fname;
 	char *compile;
@@ -22,7 +22,7 @@ int main(){
 	asprintf(&execute, "./Sully_%d", x-1);
 
 	f=fopen(fname,"w");
-	fprintf(f,s,37,34,x-1,9,10,s);
+	fprintf(f,s,10,34,37,x-1,s);
 	fclose(f);
 	system(compile);
 	if (x > 1)
