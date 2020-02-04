@@ -21,5 +21,10 @@ else
 	echo "$grace_output"
 fi
 
+rm Colleen
+rm tmp_Colleen
+rm Grace
+rm Grace_kid.c
+
 ## To run:
 ## sh test.sh
