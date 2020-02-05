@@ -1,16 +1,16 @@
 # include <stdio.h>
 /*
-   comment outside of program
+   whoami?
 */
-void	print(char *self){
+void	express(char *self){
 	printf(self,10,34,self);
 }
 
 int	main() {
 	/*
-	   comment in main
+	   I must define and express myself
 	*/
-	char *self="# include <stdio.h>%1$c/*%1$c   comment outside of program%1$c*/%1$cvoid	print(char *self){%1$c	printf(self,10,34,self);%1$c}%1$c%1$cint	main() {%1$c	/*%1$c	   comment in main%1$c	*/%1$c	char *self=%2$c%3$s%2$c;%1$c	print(self);%1$c	return (0);%1$c}";
-	print(self);
+	char *self="# include <stdio.h>%1$c/*%1$c   whoami?%1$c*/%1$cvoid	express(char *self){%1$c	printf(self,10,34,self);%1$c}%1$c%1$cint	main() {%1$c	/*%1$c	   I must define and express myself%1$c	*/%1$c	char *self=%2$c%3$s%2$c;%1$c	express(self);%1$c	return (0);%1$c}";
+	express(self);
 	return (0);
 }
