@@ -3,12 +3,8 @@ section .data
 self: db "self string"
 
 section .text
-global start
 global _main
 extern _printf
-
-start:
-		call _main
 
 _main:
 		push rbp

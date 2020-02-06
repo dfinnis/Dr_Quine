@@ -53,3 +53,5 @@ fclean: clean
 re: fclean all
 
 .PHONY : all clean fclean re
+
+## ; nasm -f macho64 Colleen.s; gcc Colleen.o; ./a.out; rm Colleen.o a.out
