@@ -7,6 +7,9 @@ global start
 global _main
 extern _printf
 
+start:
+		call _main
+
 _main:
 		push rbp
 		mov rbp, rsp
