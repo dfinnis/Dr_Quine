@@ -1,19 +1,26 @@
-;whoami?
+; I must clone myself, spawning my kid
+%define SELF "here I am"
+%define DECLARE_MAIN global _main
+%define MAIN _main:
 section .data
-self: db "I am Grace"
-
+grace:
+.self db SELF, 0
+.kidsname db "Grace_kid.s", 0
 section .text
-global _main
-extern _printf
-
-_main:
-		push rbp
-		mov rbp, rsp
-		;I must express myself
-		lea rdi, [rel self]
-		call _printf
-		call _return
-
-_return:
-		leave
-		ret
+extern _dprintf
+DECLARE_MAIN
+MAIN
+push rbp
+mov rbp, rsp
+lea rdi, [rel grace.kidsname]
+mov rsi, 0x0202
+mov rax, 0x2000005
+syscall
+mov rdi, rax
+lea rsi, [rel grace.self]
+lea rdx, [rel grace.self]
+mov rcx, 10
+mov r8, 34
+call _dprintf
+leave
+ret

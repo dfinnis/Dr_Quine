@@ -25,7 +25,7 @@ else
 	echo "$grace_output"
 fi
 
-rm Grace Grace.o Grace_kid.c
+rm Grace Grace.o Grace_kid.s
 
 #### -- Sully -- ####
 sully_cmd="nasm -f macho64 Sully.s; gcc Sully.o -o Sully; ./Sully; ls -al | grep Sully | wc -l"
