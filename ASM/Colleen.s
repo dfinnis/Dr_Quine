@@ -1,6 +1,6 @@
 ;whoami?
 section .data
-self: db "self string"
+self: db "I am Colleen"
 
 section .text
 global _main
