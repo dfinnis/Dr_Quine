@@ -17,9 +17,9 @@ mov rax, 0x2000005
 syscall
 mov rdi, rax
 lea rsi, [rel self]
-lea rdx, [rel self]
-mov rcx, 10
-mov r8, 34
+; lea rdx, [rel self]
+; mov rcx, 10
+; mov r8, 34
 call _dprintf
 leave
 ret
