@@ -14,8 +14,7 @@ _main:
 		push rbp
 		mov rbp, rsp
 		;I must express myself
-
-		lea rdi, [self]
+		lea rdi, [rel self]
 		call _printf
 		call _return
 
