@@ -2,10 +2,16 @@
 echo "\x1b[1mLaunching ASM tests...\x1B[0m\n"
 
 ## nasm -f macho64 Colleen.s; gcc Colleen.o; ./a.out; rm Colleen.o a.out
+nasm -f macho64 Colleen.s;
+gcc Colleen.o -o Colleen;
+./Colleen;
+
+rm Colleen.o Colleen
 
 
 
-# #### -- Colleen -- ####
+#### -- Colleen -- ####
+# colleen_cmd="nasm -f macho64 Colleen.s; gcc Colleen.o; ./Colleen > tmp_Colleen ; diff tmp_Colleen Colleen.c"
 # colleen_cmd="clang -Wall -Wextra -Werror -o Colleen Colleen.c; ./Colleen > tmp_Colleen ; diff tmp_Colleen Colleen.c"
 # colleen_output=$(eval "$colleen_cmd")
 # if [ "$colleen_output" == "" ]
