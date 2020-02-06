@@ -1,6 +1,7 @@
-;whoami?
 section .data
-self: db "I am Sully"
+selfevolved: db "I am Sully"
+;name:
+
 
 section .text
 global _main
@@ -10,7 +11,7 @@ _main:
 		push rbp
 		mov rbp, rsp
 		;I must express myself
-		lea rdi, [rel self]
+		lea rdi, [rel selfevolved]
 		call _printf
 		call _return
 
