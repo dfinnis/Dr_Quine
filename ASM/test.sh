@@ -12,7 +12,7 @@ else
 	echo "$colleen_output"
 fi
 
-rm Colleen tmp_Colleen
+rm Colleen Colleen.o tmp_Colleen
 
 # #### -- Grace -- ####
 # grace_cmd="clang -Wall -Wextra -Werror -o Grace Grace.c; ./Grace ; diff Grace.c Grace_kid.c"

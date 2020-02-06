@@ -12,8 +12,7 @@ else
 	echo "$colleen_output"
 fi
 
-rm Colleen
-rm tmp_Colleen
+rm Colleen tmp_Colleen
 
 #### -- Grace -- ####
 grace_cmd="clang -Wall -Wextra -Werror -o Grace Grace.c; ./Grace ; diff Grace.c Grace_kid.c"
@@ -26,8 +25,7 @@ else
 	echo "$grace_output"
 fi
 
-rm Grace
-rm Grace_kid.c
+rm Grace Grace_kid.c
 
 #### -- Sully -- ####
 sully_cmd="clang -Wall -Wextra -Werror Sully.c -o Sully ; ./Sully; ls -al | grep Sully | wc -l"
@@ -85,8 +83,7 @@ else
 	echo "$diff_0_output"
 fi
 
-rm Sully
-rm Sully_*
+rm Sully Sully_*
 
 ## To run:
 ## sh test.sh
