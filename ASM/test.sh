@@ -1,29 +1,18 @@
 #### -- ASM Tests -- ####
 echo "\x1b[1mLaunching ASM tests...\x1B[0m\n"
 
-## nasm -f macho64 Colleen.s; gcc Colleen.o; ./a.out; rm Colleen.o a.out
-nasm -f macho64 Colleen.s;
-gcc Colleen.o -o Colleen;
-./Colleen;
-
-rm Colleen.o Colleen
-
-
-
 #### -- Colleen -- ####
-# colleen_cmd="nasm -f macho64 Colleen.s; gcc Colleen.o; ./Colleen > tmp_Colleen ; diff tmp_Colleen Colleen.c"
-# colleen_cmd="clang -Wall -Wextra -Werror -o Colleen Colleen.c; ./Colleen > tmp_Colleen ; diff tmp_Colleen Colleen.c"
-# colleen_output=$(eval "$colleen_cmd")
-# if [ "$colleen_output" == "" ]
-# then
-# 	echo "\x1b[32mC: Colleen\tOK\x1b[0m"
-# else
-# 	echo "\x1b[31mC: Colleen\tERROR:\x1b[0m"
-# 	echo "$colleen_output"
-# fi
+colleen_cmd="nasm -f macho64 Colleen.s; gcc Colleen.o -o Colleen; ./Colleen > tmp_Colleen ; diff tmp_Colleen Colleen.s"
+colleen_output=$(eval "$colleen_cmd")
+if [ "$colleen_output" == "" ]
+then
+	echo "\x1b[32mC: Colleen\tOK\x1b[0m"
+else
+	echo "\x1b[31mC: Colleen\tERROR:\x1b[0m"
+	echo "$colleen_output"
+fi
 
-# rm Colleen
-# rm tmp_Colleen
+rm Colleen tmp_Colleen
 
 # #### -- Grace -- ####
 # grace_cmd="clang -Wall -Wextra -Werror -o Grace Grace.c; ./Grace ; diff Grace.c Grace_kid.c"
