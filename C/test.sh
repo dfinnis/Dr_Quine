@@ -1,14 +1,14 @@
 #### -- Dr Quine Test -- ####
-echo "\x1b[1mLaunching Dr Quine test...\x1B[0m\n"
+echo "\n\x1b[1mLaunching Dr Quine C tests...\x1B[0m\n"
 
 #### -- Colleen -- ####
 colleen_cmd="clang -Wall -Wextra -Werror -o Colleen Colleen.c; ./Colleen > tmp_Colleen ; diff tmp_Colleen Colleen.c"
 colleen_output=$(eval "$colleen_cmd")
 if [ "$colleen_output" == "" ]
 then
-	echo "\x1b[32mC: Colleen\tOK\x1b[0m"
+	echo "\x1b[32mC:\tColleen\tOK\x1b[0m"
 else
-	echo "\x1b[31mC: Colleen\tERROR:\x1b[0m"
+	echo "\x1b[31mC:\tColleen\tERROR:\x1b[0m"
 	echo "$colleen_output"
 fi
 
@@ -19,9 +19,9 @@ grace_cmd="clang -Wall -Wextra -Werror -o Grace Grace.c; ./Grace ; diff Grace.c 
 grace_output=$(eval "$grace_cmd")
 if [ "$grace_output" == "" ]
 then
-	echo "\x1b[32mC: Grace\tOK\x1b[0m"
+	echo "\x1b[32mC:\tGrace\tOK\x1b[0m"
 else
-	echo "\x1b[31mC: Grace\tERROR:\x1b[0m"
+	echo "\x1b[31mC:\tGrace\tERROR:\x1b[0m"
 	echo "$grace_output"
 fi
 
@@ -71,9 +71,9 @@ diff_0_desired="6c6
 
 if [ "$sully_output" == "      14" -a "$diff_5_output" == "" -a "$diff_4_output" == "$diff_4_desired"  -a "$diff_3_output" == "$diff_3_desired"  -a "$diff_2_output" == "$diff_2_desired"  -a "$diff_1_output" == "$diff_1_desired"  -a "$diff_0_output" == "$diff_0_desired" ]
 then
-	echo "\x1b[32mC: Sully\tOK\x1b[0m"
+	echo "\x1b[32mC:\tSully\tOK\x1b[0m"
 else
-	echo "\x1b[31mC: Sully\tERROR:\x1b[0m"
+	echo "\x1b[31mC:\tSully\tERROR:\x1b[0m"
 	echo "$sully_output"
 	echo "$diff_5_output"
 	echo "$diff_4_output"
