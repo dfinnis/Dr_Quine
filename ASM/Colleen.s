@@ -8,13 +8,14 @@ global _main
 extern _printf
 
 _main:
-	push rpb
-	mov rbp, rsp
-	;I must express myself
-	lea rdi, [rel fmt]
-	call _printf
-	call _return
+		push rbp
+		mov rbp, rsp
+		;I must express myself
+
+		lea rdi, [self]
+		call _printf
+		call _return
 
 _return:
-	leave
-	ret
+		leave
+		ret
