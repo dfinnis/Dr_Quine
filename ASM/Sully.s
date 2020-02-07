@@ -3,7 +3,6 @@ self: db "section .data%1$cself: db %2$c%3$s%2$c,0%1$cfilename: db %2$cSully_%%d
 filename: db "Sully_%d.s",0
 cmd: db "nasm -f macho64 Sully_%1$d.s; gcc Sully_%1$d.o -o Sully_%1$d; ./Sully_%1$d",0
 initial: db "Sully_5.s"
-x: dd 5
 
 section .text
 global _start
@@ -18,14 +17,16 @@ _main:
 	mov rbp, rsp
 
 	; Establish x
+	mov r12, 5
 	lea rdi, [rel initial]
 	mov rsi, 0
 	mov rax, 0x2000021		; Access file syscall
 	syscall
 
-	mov r12, [rel x]
-	jae .dec				; Decrement x if Sully_5 exists
+	jb .dec					; Skip decrement x if Sully_5.s doesn't exist
+	dec r12
 
+.dec:
 	; Create filename
 	lea rdi, [rel filename]
 	lea rsi, [rel filename]
@@ -64,10 +65,6 @@ _main:
 	; Compile and execute
 	lea rdi, [rel cmd]
 	call _system
-
-.dec:
-	dec r12
-	ret
 
 .bad:
 	mov rax, 1
