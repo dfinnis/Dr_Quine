@@ -37,37 +37,37 @@ diff_5_output=$(eval "$diff_5")
 diff_4="diff Sully.s Sully_4.s"
 diff_4_output=$(eval "$diff_4")
 diff_4_desired="6c6
-< 	x: dd 5
+< 	mov r12, 5
 ---
-> 	x: dd 4"
+> 	mov r12, 4"
 
 diff_3="diff Sully.s Sully_3.s"
 diff_3_output=$(eval "$diff_3")
 diff_3_desired="6c6
-< 	x: dd 5
+< 	mov r12, 5
 ---
-> 	x: dd 3"
+> 	mov r12, 3"
 
 diff_2="diff Sully.s Sully_2.s"
 diff_2_output=$(eval "$diff_2")
 diff_2_desired="6c6
-< 	x: dd 5
+< 	mov r12, 5
 ---
-> 	x: dd 2"
+> 	mov r12, 2"
 
 diff_1="diff Sully.s Sully_1.s"
 diff_1_output=$(eval "$diff_1")
 diff_1_desired="6c6
-< 	x: dd 5
+< 	mov r12, 5
 ---
-> 	x: dd 1"
+> 	mov r12, 1"
 
 diff_0="diff Sully.s Sully_0.s"
 diff_0_output=$(eval "$diff_0")
 diff_0_desired="6c6
-< 	x: dd 5
+< 	mov r12, 5
 ---
-> 	x: dd 0"
+> 	mov r12, 0"
 
 if [ "$sully_output" == "      14" -a "$diff_5_output" == "" -a "$diff_4_output" == "$diff_4_desired"  -a "$diff_3_output" == "$diff_3_desired"  -a "$diff_2_output" == "$diff_2_desired"  -a "$diff_1_output" == "$diff_1_desired"  -a "$diff_0_output" == "$diff_0_desired" ]
 then
