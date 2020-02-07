@@ -16,9 +16,6 @@ _main:
 	push rbp
 	mov rbp, rsp
 
-	; if Sully_5 exists decrement x
-	; ??
-
 	; Create filename
 	lea rdi, [rel filename]
 	lea rsi, [rel filename]
@@ -29,14 +26,11 @@ _main:
 	call _sprintf
 
 	; Open file
-	mov rax, 0x2000005		;open syscall
+	mov rax, 0x2000005		; Open file syscall
 	lea rdi, [rel filename]
 	mov rsi, 03001o			; Create, write only
 	mov rdx, 0644o			; Permissions
 	syscall
-	; jc .ret
-	; cmp rax, 0
-	; jle .bad
 
 	; Print self in file
 	mov rdi, rax
@@ -49,18 +43,18 @@ _main:
 	call _dprintf
 
 	; Close file
-	mov rax, 0x20000006	; close file syscall
+	mov rax, 0x20000006	; Close file syscall
 	syscall
 	mov rax, 0
 
-	; Create cmd string
+	; Create compile and execute command
 	lea rdi, [rel cmd]
 	lea rsi, [rel cmd]
 	mov rdx, [rel x]
 	dec rdx
 	call _sprintf
 
-	; cmd and execute
+	; Compile and execute
 	lea rdi, [rel cmd]
 	call _system
 
@@ -71,9 +65,3 @@ _main:
 .bad:
 	mov rax, 1
 	jmp .ret
-
-	; ; ; ; Print cmd str for test
-	; mov rax, 0x20000004 ;;;
-	; mov rdi, 0x1 ;;; standard out
-	; lea rsi, [rel cmd] ;;;
-	; call _dprintf ;;;
