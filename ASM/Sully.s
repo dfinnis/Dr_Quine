@@ -30,8 +30,7 @@ _main:
 	mov rax, 0x2000005
 	lea rdi, [rel filename]
 	mov rsi, 03001o
-	; mov rsi, 1537 ; need correct permissions
-	; mov rdx, 448
+	mov rdx, 0644o
 	syscall
 	; jc .ret
 	; cmp rax, 0
