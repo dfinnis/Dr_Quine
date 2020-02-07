@@ -83,5 +83,4 @@ else
 	echo "$diff_0_output"
 fi
 
-rm Sully Sully.o
-#  Sully_*
+# rm Sully Sully.o Sully_*
