@@ -37,9 +37,10 @@ _main:
 	lea rsi, [rel self]
 	mov rdx, 10
 	mov rcx, 34
-	lea r8, [rel self]
-	mov r9, [rel x]
-	dec r9
+	mov r8, 37
+	lea r9, [rel self]
+	mov r10, [rel x]
+	dec r10
 	call _dprintf
 
 	; Close file
