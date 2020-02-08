@@ -6,9 +6,9 @@ colleen_cmd="python3 Colleen.py > tmp_Colleen ; diff tmp_Colleen Colleen.py"
 colleen_output=$(eval "$colleen_cmd")
 if [ "$colleen_output" == "" ]
 then
-	echo "\x1b[32mC:\tColleen\tOK\x1b[0m"
+	echo "\x1b[32mPython:\tColleen\tOK\x1b[0m"
 else
-	echo "\x1b[31mC:\tColleen\tERROR:\x1b[0m"
+	echo "\x1b[31mPython:\tColleen\tERROR:\x1b[0m"
 	echo "$colleen_output"
 fi
 
@@ -19,9 +19,9 @@ grace_cmd="python3 Grace.py; diff Grace.py Grace_kid.py"
 grace_output=$(eval "$grace_cmd")
 if [ "$grace_output" == "" ]
 then
-	echo "\x1b[32mC:\tGrace\tOK\x1b[0m"
+	echo "\x1b[32mPython:\tGrace\tOK\x1b[0m"
 else
-	echo "\x1b[31mC:\tGrace\tERROR:\x1b[0m"
+	echo "\x1b[31mPython:\tGrace\tERROR:\x1b[0m"
 	echo "$grace_output"
 fi
 
@@ -71,9 +71,9 @@ diff_0_desired="6c6
 
 if [ "$sully_output" == "      14" -a "$diff_5_output" == "" -a "$diff_4_output" == "$diff_4_desired"  -a "$diff_3_output" == "$diff_3_desired"  -a "$diff_2_output" == "$diff_2_desired"  -a "$diff_1_output" == "$diff_1_desired"  -a "$diff_0_output" == "$diff_0_desired" ]
 then
-	echo "\x1b[32mC:\tSully\tOK\x1b[0m"
+	echo "\x1b[32mPython:\tSully\tOK\x1b[0m"
 else
-	echo "\x1b[31mC:\tSully\tERROR:\x1b[0m"
+	echo "\x1b[31mPython:\tSully\tERROR:\x1b[0m"
 	echo "$sully_output"
 	echo "$diff_5_output"
 	echo "$diff_4_output"
