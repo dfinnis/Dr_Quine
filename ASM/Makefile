@@ -24,21 +24,16 @@ OBJ_COLLEEN = $(SRC_COLLEEN:.s=.o)
 OBJ_GRACE = $(SRC_GRACE:.s=.o)
 OBJ_SULLY = $(SRC_SULLY:.s=.o)
 
-FLAGS = -Wall -Werror -Wextra
-
 all: $(NAME)
 
 $(OBJ_COLLEEN): $(SRC_COLLEEN)
-	@clang -c $(FLAGS) $(SRC_COLLEEN)
+	@nasm -f macho64 $(SRC_COLLEEN); gcc $(OBJ_COLLEEN) -o $(COLLEEN)
 
 $(OBJ_GRACE): $(SRC_GRACE)
-	@clang -c $(FLAGS) $(SRC_GRACE)
+	@nasm -f macho64 $(SRC_GRACE); gcc $(OBJ_GRACE) -o $(GRACE)
 
 $(OBJ_SULLY): $(SRC_SULLY)
-	@clang -c $(FLAGS) $(SRC_SULLY)
-
-%.o: %.s
-	@nasm -f macho64 $<
+	@nasm -f macho64 $(SRC_SULLY); gcc $(OBJ_SULLY) -o $(SULLY)
 
 clean:
 	@rm -rf $(OBJ_COLLEEN)
@@ -53,5 +48,3 @@ fclean: clean
 re: fclean all
 
 .PHONY : all clean fclean re
-
-## nasm -f macho64 Colleen.s; gcc Colleen.o; ./a.out; rm Colleen.o a.out
