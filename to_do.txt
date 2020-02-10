@@ -1,0 +1,8 @@
+#### To Do ####
+- rm argv sully.py
+- sully accept x up to max int
+- .c fopen -> open (check chmod 000 Grace_kid./Sully_*.)
+- check open return for error
+- compile below 0?
+- Sully don't check a filename -> use var to initialize
+- asm review the sprintfs which can create overlaps between db
