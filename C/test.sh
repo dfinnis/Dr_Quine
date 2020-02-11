@@ -39,35 +39,35 @@ diff_5_output=$(eval "$diff_5")
 
 diff_4="diff Sully.c Sully_4.c"
 diff_4_output=$(eval "$diff_4")
-diff_4_desired="6c6
+diff_4_desired="8c8
 < 	int x=5;
 ---
 > 	int x=4;"
 
 diff_3="diff Sully.c Sully_3.c"
 diff_3_output=$(eval "$diff_3")
-diff_3_desired="6c6
+diff_3_desired="8c8
 < 	int x=5;
 ---
 > 	int x=3;"
 
 diff_2="diff Sully.c Sully_2.c"
 diff_2_output=$(eval "$diff_2")
-diff_2_desired="6c6
+diff_2_desired="8c8
 < 	int x=5;
 ---
 > 	int x=2;"
 
 diff_1="diff Sully.c Sully_1.c"
 diff_1_output=$(eval "$diff_1")
-diff_1_desired="6c6
+diff_1_desired="8c8
 < 	int x=5;
 ---
 > 	int x=1;"
 
 diff_0="diff Sully.c Sully_0.c"
 diff_0_output=$(eval "$diff_0")
-diff_0_desired="6c6
+diff_0_desired="8c8
 < 	int x=5;
 ---
 > 	int x=0;"
