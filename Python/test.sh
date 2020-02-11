@@ -25,6 +25,9 @@ else
 	echo "$grace_output"
 fi
 
+chmod 000 Grace_kid.py; python3 Grace.py
+chmod 777 Grace_kid.py
+
 rm Grace_kid.py
 
 #### -- Sully -- ####
@@ -82,6 +85,19 @@ else
 	echo "$diff_1_output"
 	echo "$diff_0_output"
 fi
+
+chmod 000 Sully_5.py; python3 Sully.py
+chmod 000 Sully_4.py; python3 Sully.py
+chmod 000 Sully_3.py; python3 Sully.py
+chmod 000 Sully_2.py; python3 Sully.py
+chmod 000 Sully_1.py; python3 Sully.py
+chmod 000 Sully_0.py; python3 Sully.py
+chmod 777 Sully_5.py
+chmod 777 Sully_4.py
+chmod 777 Sully_3.py
+chmod 777 Sully_2.py
+chmod 777 Sully_1.py
+chmod 777 Sully_0.py
 
 rm Sully_*
 

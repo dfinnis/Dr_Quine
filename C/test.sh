@@ -25,6 +25,9 @@ else
 	echo "$grace_output"
 fi
 
+chmod 000 Grace_kid.c; ./Grace
+chmod 777 Grace_kid.c
+
 rm Grace Grace_kid.c
 
 #### -- Sully -- ####
@@ -82,6 +85,19 @@ else
 	echo "$diff_1_output"
 	echo "$diff_0_output"
 fi
+
+chmod 000 Sully_5.c; ./Sully
+chmod 000 Sully_4.c; ./Sully
+chmod 000 Sully_3.c; ./Sully
+chmod 000 Sully_2.c; ./Sully
+chmod 000 Sully_1.c; ./Sully
+chmod 000 Sully_0.c; ./Sully
+chmod 777 Sully_5.c
+chmod 777 Sully_4.c
+chmod 777 Sully_3.c
+chmod 777 Sully_2.c
+chmod 777 Sully_1.c
+chmod 777 Sully_0.c
 
 rm Sully Sully_*
 
