@@ -1,8 +1,15 @@
 #### To Do ####
-- sully accept x up to max int
-- rm argv sully.py
-- Sully don't check a filename -> use var to initialize
-- asm review the sprintfs which can create overlaps between db
 
+## ASM ##
+- sully accept x up to max int
+	- asm review the sprintfs which can create overlaps between db - asprintf
+- Grace asm instructions in macro
+
+- test Sully x = maxint, minint
+
+#### DONE-ish
 - check open return for error (ASM)?
-- (check chmod 000 Grace_kid./Sully_*.)
+- (re-check chmod 000 Grace_kid./Sully_*.)
+
+#### DONE
+- rm argv sully.py
