@@ -1,7 +1,7 @@
 #### To Do ####
-- c sully change "./Sully_", adding X
 
 #### DONE
+- c sully change "./Sully_", adding X
 - change asm sully decrement condition
 - sully accept x up to max int
 	- asm review the sprintfs which can create overlaps between db - asprintf
