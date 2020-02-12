@@ -1,4 +1,5 @@
 #### To Do ####
+- c sully change "./Sully_", adding X
 
 #### DONE
 - change asm sully decrement condition
