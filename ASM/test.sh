@@ -39,35 +39,35 @@ diff_5_output=$(eval "$diff_5")
 
 diff_4="diff Sully.s Sully_4.s"
 diff_4_output=$(eval "$diff_4")
-diff_4_desired="24c24
+diff_4_desired="26c26
 < 	mov r12, 5
 ---
 > 	mov r12, 4"
 
 diff_3="diff Sully.s Sully_3.s"
 diff_3_output=$(eval "$diff_3")
-diff_3_desired="24c24
+diff_3_desired="26c26
 < 	mov r12, 5
 ---
 > 	mov r12, 3"
 
 diff_2="diff Sully.s Sully_2.s"
 diff_2_output=$(eval "$diff_2")
-diff_2_desired="24c24
+diff_2_desired="26c26
 < 	mov r12, 5
 ---
 > 	mov r12, 2"
 
 diff_1="diff Sully.s Sully_1.s"
 diff_1_output=$(eval "$diff_1")
-diff_1_desired="24c24
+diff_1_desired="26c26
 < 	mov r12, 5
 ---
 > 	mov r12, 1"
 
 diff_0="diff Sully.s Sully_0.s"
 diff_0_output=$(eval "$diff_0")
-diff_0_desired="24c24
+diff_0_desired="26c26
 < 	mov r12, 5
 ---
 > 	mov r12, 0"
@@ -86,7 +86,7 @@ else
 	echo "$diff_0_output"
 fi
 
-chmod 000 Sully_5.s; ./Sully
-chmod 777 Sully_5.s
+# chmod 000 Sully_5.s; ./Sully
+# chmod 777 Sully_5.s
 
 rm Sully Sully.o Sully_*
