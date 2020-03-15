@@ -1,6 +1,6 @@
 # Dr Quine
 
-### An introduction to Quines and Virus
+An introduction to Quines and Virus
 
 The following 3 programs in C, ASM, and Python:
 
