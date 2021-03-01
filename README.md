@@ -2,8 +2,11 @@
 
 An introduction to Quines and Virus
 
-The following 3 programs in C, ASM, and Python:
+#### Final Score 125/100
 
+## Challenge
+
+The following 3 programs in C, ASM, and Python:
 
 ### Colleen
 
