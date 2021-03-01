@@ -8,19 +8,11 @@ An introduction to Quines and Virus
 
 The following 3 programs in C, ASM, and Python:
 
-### Colleen
+* Colleen - Print my source code
 
-Print my source code
+* Grace - Clone myself, spawning my kid
 
-
-### Grace
-
-Clone myself, spawning my kid
-
-
-### Sully
-
-Self-replicate 5 times
+* Sully - Self-replicate 5 times
 
 
 ## Getting Started
