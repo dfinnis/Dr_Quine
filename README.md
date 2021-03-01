@@ -20,6 +20,16 @@ Clone myself, spawning my kid
 Self-replicate 5 times
 
 
+## Getting Started
+
+Clone this repo. ```git clone https://github.com/dfinnis/Dr_Quine.git```
+
+in ```C/``` and ```ASM/``` first ```make``` to create the binaries.
+
+Then you can run the binaries ```./Colleen```, ```./Grace```, & ```./Sully```.
+
+in ```Python/``` run files directly with ```python Colleen```.
+
 ## Tests
 
 <img src="https://github.com/dfinnis/Dr_Quine/blob/master/img/tests.png" width="379">
