@@ -39,4 +39,5 @@ For each language:
 
 ## Dependencies
 
-Python, NASM
+* Python 3.9.1 (no requirements.txt necessary)
+* NASM 2.14.02
