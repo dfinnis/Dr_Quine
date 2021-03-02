@@ -17,13 +17,17 @@ The following 3 programs in C, ASM, and Python:
 
 ## Getting Started
 
-Clone this repo. ```git clone https://github.com/dfinnis/Dr_Quine.git```
+Clone this repo.
 
-in ```C/``` and ```ASM/``` first ```make``` to create the binaries.
+```git clone https://github.com/dfinnis/Dr_Quine.git```
 
-Then you can run the binaries ```./Colleen```, ```./Grace```, & ```./Sully```.
+in ```C/``` and ```ASM/``` first ```make``` to create the binaries. Then you can run the binaries.
 
-in ```Python/``` run files directly with ```python Colleen```.
+```./Colleen```, ```./Grace```, & ```./Sully```
+
+in ```Python/``` run files directly.
+
+```python Colleen```
 
 ## Tests
 
