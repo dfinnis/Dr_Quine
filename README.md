@@ -21,11 +21,11 @@ Clone this repo.
 
 ```git clone https://github.com/dfinnis/Dr_Quine.git```
 
-in ```C/``` and ```ASM/``` first ```make``` to create the binaries. Then you can run the binaries.
+In folders ```C/``` and ```ASM/``` first ```make``` to create the binaries before running.
 
 ```./Colleen```, ```./Grace```, & ```./Sully```
 
-in ```Python/``` run files directly.
+in folder ```Python/``` run files directly.
 
 ```python Colleen```
 
