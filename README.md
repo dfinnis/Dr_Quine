@@ -23,11 +23,11 @@ Clone this repo.
 
 In folders ```C/``` and ```ASM/``` first ```make``` to create the binaries before running.
 
-```./Colleen```, ```./Grace```, & ```./Sully```
+```./Colleen```, ```./Grace``` & ```./Sully```
 
 in folder ```Python/``` run files directly.
 
-```python Colleen```
+```python Colleen```, ```python Grace``` & ```python Sully```
 
 ## Tests
 
