@@ -21,13 +21,16 @@ Clone this repo.
 
 ```git clone https://github.com/dfinnis/Dr_Quine.git```
 
+
 In folders ```C/``` and ```ASM/``` first ```make``` to create the binaries before running.
 
 ```./Colleen```, ```./Grace``` & ```./Sully```
 
-in folder ```Python/``` run files directly.
+
+In folder ```Python/``` run files directly.
 
 ```python Colleen```, ```python Grace``` & ```python Sully```
+
 
 ## Tests
 
@@ -40,6 +43,7 @@ For each language:
 * Compares Grace and Grace_Kid
 
 * Ensures Sully creates 5 children, identical apart from the number
+
 
 ## Dependencies
 
