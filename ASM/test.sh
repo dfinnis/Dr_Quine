@@ -1,5 +1,5 @@
 #### -- ASM Tests -- ####
-echo "\n\x1b[1mLaunching Dr Quine ASM tests...\x1B[0m\n"
+echo "\x1b[1mLaunching Dr Quine ASM tests...\x1B[0m\n"
 
 #### -- Colleen -- ####
 colleen_cmd="nasm -f macho64 Colleen.s; gcc Colleen.o -o Colleen; ./Colleen > tmp_Colleen ; diff tmp_Colleen Colleen.s"
@@ -90,3 +90,7 @@ fi
 # chmod 777 Sully_5.s
 
 rm Sully Sully.o Sully_*
+echo
+
+## To run:
+## ./test.sh

@@ -1,5 +1,5 @@
 #### -- Dr Quine Test -- ####
-echo "\n\x1b[1mLaunching Dr Quine Python tests...\x1B[0m\n"
+echo "\x1b[1mLaunching Dr Quine Python tests...\x1B[0m\n"
 
 #### -- Colleen -- ####
 colleen_cmd="python3 Colleen.py > tmp_Colleen ; diff tmp_Colleen Colleen.py"
@@ -100,6 +100,7 @@ chmod 777 Sully_1.py
 chmod 777 Sully_0.py
 
 rm Sully_*
+echo
 
 ## To run:
 ## ./test.sh

@@ -1,5 +1,5 @@
 #### -- Dr Quine Test -- ####
-echo "\n\x1b[1mLaunching Dr Quine C tests...\x1B[0m\n"
+echo "\x1b[1mLaunching Dr Quine C tests...\x1B[0m\n"
 
 #### -- Colleen -- ####
 colleen_cmd="clang -Wall -Wextra -Werror -o Colleen Colleen.c; ./Colleen > tmp_Colleen ; diff tmp_Colleen Colleen.c"
@@ -100,6 +100,7 @@ chmod 777 Sully_1.c
 chmod 777 Sully_0.c
 
 rm Sully Sully_*
+echo
 
 ## To run:
-## sh test.sh
+## ./test.sh
