@@ -13,6 +13,8 @@ The following 3 programs in C, ASM, and Python:
 
 * **Sully** - Self-replicate 5 times
 
+See the [subject](https://github.com/dfinnis/Dr_Quine/blob/master/subject.pdf) for more details.
+
 #### Final Score 125/100
 
 
