@@ -24,6 +24,10 @@ Clone this repo.
 
 ```git clone https://github.com/dfinnis/Dr_Quine.git```
 
+For *ASM/* you may need to install *nasm*.
+
+```brew install nasm```
+
 In *C/* and *ASM/* first make the binaries.
 
 ```make```
@@ -34,7 +38,7 @@ Then run the binaries.
 
 In *Python/* run files directly.
 
-```python Colleen```, ```python Grace``` & ```python Sully```
+```python Colleen.py```, ```python Grace.py``` & ```python Sully.py```
 
 
 ## Examples
