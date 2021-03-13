@@ -43,7 +43,7 @@ Let's demo the python examples:
 
 Print my source code.
 
-Run *Colleen* and compare the source code the output. This *diff* should output nothing, showing source code and output are identical.
+Run *Colleen* and compare the output with the source code. This *diff* should output nothing, showing output and source code are identical.
 
 ```python Colleen.py > tmp_Colleen ; diff tmp_Colleen Colleen.py```
 
