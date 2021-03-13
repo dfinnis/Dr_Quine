@@ -34,8 +34,10 @@ In *Python/* run files directly.
 
 ```python Colleen```, ```python Grace``` & ```python Sully```
 
-Let's demo the python examples:
 
+## Examples
+
+Let's demo the python examples:
 
 ### Colleen
 
