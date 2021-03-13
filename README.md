@@ -63,7 +63,7 @@ Run *Sully* and compare *Sully* with clones. The following command should show t
 
 ```python Sully.py; diff Sully.py Sully_5.py; diff Sully.py Sully_4.py; diff Sully.py Sully_3.py; diff Sully.py Sully_2.py; diff Sully.py Sully_1.py; diff Sully.py Sully_0.py```
 
-<img src="https://github.com/dfinnis/Dr_Quine/blob/master/img/sully.png" width="100%">
+<img src="https://github.com/dfinnis/Dr_Quine/blob/master/img/sully.png" width="379">
 
 
 ## Tests
