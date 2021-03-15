@@ -3,7 +3,7 @@
 An introduction to Quines and Virus
 
 
-## Challenge
+### Challenge
 
 The following 3 programs in C, ASM, and Python:
 
