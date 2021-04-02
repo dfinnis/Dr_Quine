@@ -1,6 +1,6 @@
 # Dr Quine
 
-An introduction to Quines and Virus
+An intro to Quines, Self-replication & Virus
 
 
 ### Challenge
