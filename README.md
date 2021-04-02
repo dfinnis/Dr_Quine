@@ -44,7 +44,8 @@ Let's demo the python examples:
 
 Print my source code.
 
-Run *Colleen* and compare the output with the source code. This *diff* should output nothing, showing output and source code are identical. <br>
+Run *Colleen* and compare the output with the source code. This *diff* should output nothing, showing output and source code are identical.
+
 ```python Colleen.py > tmp_Colleen ; diff tmp_Colleen Colleen.py```
 
 
@@ -52,7 +53,8 @@ Run *Colleen* and compare the output with the source code. This *diff* should ou
 
 Clone myself, spawning my kid.
 
-Run *Grace* and compare *Grace* with *Grace_kid*. This *diff* should output nothing, showing *Grace* and *Grace_kid* are identical. <br>
+Run *Grace* and compare *Grace* with *Grace_kid*. This *diff* should output nothing, showing *Grace* and *Grace_kid* are identical.
+
 ```python Grace.py; diff Grace.py Grace_kid.py```
 
 
