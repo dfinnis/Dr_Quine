@@ -15,7 +15,7 @@ The following 3 programs in C, ASM, and Python:
 
 See the [subject](https://github.com/dfinnis/Dr_Quine/blob/master/subject.pdf) for more details.
 
-Final Score 125/100
+*Final Score 125/100*
 
 
 ## Getting Started
